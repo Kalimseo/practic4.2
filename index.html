@@ -22,7 +22,7 @@
 			
 			ans2(){
 				if (this.b-this.a != 0){
-					document.write((this.a+this.b)/(this.b-this.a) + ";  ");
+					document.write((this.a+this.b)/(this.b-this.a) + "; ");
 				}
 				if (this.b-this.a == 0){
 					document.write("деление на 0;  ");
@@ -44,17 +44,19 @@
 				
 			//Достаёт значния из строк и создаёт объекты класса
 			
-			var an1=new Laba(document.getElementById("a1").value,
-						 	 document.getElementById("b1").value,
-						 	 document.getElementById("x1").value);
-			var an2=new Laba(document.getElementById("a2").value,
-						 	 document.getElementById("b2").value,
-						 	 document.getElementById("x2").value);
-			var an3=new Laba(document.getElementById("a3").value,
-						 	 document.getElementById("b3").value,
-						 	 document.getElementById("x3").value);
+			var an1=new Laba(Number(document.getElementById("a1").value),
+						 	 Number(document.getElementById("b1").value),
+						 	 Number(document.getElementById("x1").value));
+			
+			var an2=new Laba(Number(document.getElementById("a2").value),
+						 	 Number(document.getElementById("b2").value),
+						 	 Number(document.getElementById("x2").value));
+			
+			var an3=new Laba(Number(document.getElementById("a3").value),
+						 	 Number(document.getElementById("b3").value),
+						 	 Number(document.getElementById("x3").value));
 				
-			//Просчитывает все объекты класса всеми методами методом
+			//Просчитывает все объекты класса всеми методами
 			
 			an1.ans1();
 			an2.ans1();
